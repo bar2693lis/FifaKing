@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context=".EnterResultActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        app:srcCompat="@drawable/fifakinklogo" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/PlayerOneButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/king"
+                android:gravity="center"
+                android:text="Choose Player 1" />
+
+            <TextView
+                android:id="@+id/PlayerTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Player name"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp" />
+
+            <RadioGroup
+                android:id="@+id/RadioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/RadioWonButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_google_signin_btn_text_dark_normal_background"
+                    android:text="Won"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                <RadioButton
+                    android:id="@+id/RadioLostButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_google_signin_btn_text_dark_normal_background"
+                    android:text="Lost"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                <RadioButton
+                    android:id="@+id/RadioDrawButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/common_google_signin_btn_text_dark_normal_background"
+                    android:text="Draw"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/VsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="VS"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/PlayerTwoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/king"
+                android:text="Choose Player 2" />
+
+            <TextView
+                android:id="@+id/PlayerTextView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Player name"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="24sp" />
+
+            <RadioGroup
+                android:id="@+id/RadioGroup2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/RadioWonButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_google_signin_btn_text_dark_normal_background"
+                    android:shadowColor="@color/common_google_signin_btn_text_dark_default"
+                    android:text="Won"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textColorHighlight="@color/common_google_signin_btn_text_dark_default"
+                    android:textColorHint="@color/common_google_signin_btn_text_dark_default"
+                    android:textColorLink="@color/common_google_signin_btn_text_dark_default" />
+
+                <RadioButton
+                    android:id="@+id/RadioLostButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_google_signin_btn_text_dark_normal_background"
+                    android:text="Lost"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+                <RadioButton
+                    android:id="@+id/RadioDrawButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/common_google_signin_btn_text_dark_normal_background"
+                    android:text="Draw"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/SaveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button"
+        android:text="Save"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/ReturnButtonER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button"
+        android:text="Return"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
